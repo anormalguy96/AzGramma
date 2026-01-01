@@ -1,0 +1,26 @@
+{
+  "name": "azgramma",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "services/*"
+  ],
+  "scripts": {
+    "dev": "netlify dev",
+    "build:web": "npm --workspace apps/web run build",
+    "build": "npm run build:web",
+    "typecheck": "npm --workspace apps/web run typecheck",
+    "lint": "npm --workspace apps/web run lint",
+    "format": "npm --workspace apps/web run format"
+  },
+  "dependencies": {
+    "@netlify/functions": "^5.1.2",
+    "@supabase/supabase-js": "^2.89.0",
+    "openai": "^6.12.0",
+    "stripe": "^20.1.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "vite-plugin-vue-devtools": "^8.0.5"
+  }
+}
