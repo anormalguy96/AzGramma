@@ -1,21 +1,13 @@
-# Node
 node_modules/
 
-# Vite
 apps/web/dist/
 apps/web/.vite/
 apps/web/.env
 # Netlify
 .netlify/
 
-# Env
-.env
-.env.example
-
-# Logs
 *.log
 
-# Python
 __pycache__/
 .venv/
 notebooks/
